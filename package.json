@@ -1,0 +1,7 @@
+{
+  "name": "games-stats-poc",
+  "private": true,
+  "workspaces": [
+    "subgraphs/*"
+  ]
+}

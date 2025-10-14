@@ -1,0 +1,18 @@
+{
+  "name": "games-subgraph",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "@apollo/server": "^4",
+    "@apollo/subgraph": "^2",
+    "graphql": "^16"
+  },
+  "devDependencies": {
+    "ts-node": "^10",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,10 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
+
+type Game @key(fields: "id") {
+  id: ID!
+  title: String
+}
+
+type Query {
+  games: [Game]
+}
