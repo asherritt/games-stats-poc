@@ -3,5 +3,12 @@
   "private": true,
   "workspaces": [
     "subgraphs/*"
-  ]
+  ],
+  "dependencies": {
+    "graphql-tag": "^2.12.6"
+  },
+  "scripts": {
+    "compose-graph": "rover supergraph compose --config ./supergraph/supergraph.yaml > ./supergraph/supergraph.graphql",
+    "run-router": "./supergraph/router --supergraph ./supergraph/supergraph.graphql"
+  }
 }

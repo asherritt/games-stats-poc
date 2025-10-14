@@ -2,8 +2,13 @@ import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 import { buildSubgraphSchema } from '@apollo/subgraph';
 import { readFileSync } from 'fs';
-import { join } from 'path';
 import gql from 'graphql-tag';
+
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const typeDefs = gql(
   readFileSync(join(__dirname, 'schema.graphql'), { encoding: 'utf-8' })

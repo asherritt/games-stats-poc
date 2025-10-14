@@ -1,0 +1,16 @@
+extend schema
+  @link(url: "https://specs.apollo.dev/federation/v2.3", import: ["@key"])
+
+"""
+Represents a player in the system.
+"""
+type Player @key(fields: "id") {
+  id: ID!
+  username: String
+  displayName: String
+  email: String
+}
+
+type Query {
+  players: [Player]
+}
