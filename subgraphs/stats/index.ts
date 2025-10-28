@@ -25,5 +25,5 @@ const server = new ApolloServer({
 startStandaloneServer(server, {
     listen: { port: 4003 }
 }).then(({ url }) => {
-    console.log(`🚀 Stats subgraph ready at ${url}`);
+    console.log(`Stats subgraph ready at ${url}`);
 });
